@@ -1,0 +1,69 @@
+<?php //%255Bd84bfe792afb17c4ea981b2b66ee5418%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT p0_.id AS id_0, p0_.nom AS nom_1, p0_.prix AS prix_2, p0_.quantite AS quantite_3, p0_.rupture AS rupture_4, p0_.lien_image AS lien_image_5 FROM produit p0_ ORDER BY p0_.id DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\Produit',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'nom_1' => 'nom',
+                    'prix_2' => 'prix',
+                    'quantite_3' => 'quantite',
+                    'rupture_4' => 'rupture',
+                    'lien_image_5' => 'lienImage',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'p',
+                    'nom_1' => 'p',
+                    'prix_2' => 'p',
+                    'quantite_3' => 'p',
+                    'rupture_4' => 'p',
+                    'lien_image_5' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Produit',
+                    'nom_1' => 'App\\Entity\\Produit',
+                    'prix_2' => 'App\\Entity\\Produit',
+                    'quantite_3' => 'App\\Entity\\Produit',
+                    'rupture_4' => 'App\\Entity\\Produit',
+                    'lien_image_5' => 'App\\Entity\\Produit',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

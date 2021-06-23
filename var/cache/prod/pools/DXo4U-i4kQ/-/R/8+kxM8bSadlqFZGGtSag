@@ -1,0 +1,55 @@
+<?php //App%255CEntity%255CProduit%2524nom
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+        clone ($p['App\\Validator\\Antispam'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Antispam')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'type' => [
+                'string',
+            ],
+            'length' => [
+                200,
+            ],
+            'precision' => [
+                null,
+            ],
+            'scale' => [
+                null,
+            ],
+            'maxMessage' => [
+                1 => 'Votre nom ne doit pas dépasser {{ limit }} caractères',
+            ],
+            'minMessage' => [
+                1 => 'Votre nom doit faire au moins {{ limit }} caractères ',
+            ],
+            'max' => [
+                1 => 100,
+            ],
+            'min' => [
+                1 => 2,
+            ],
+            'groups' => [
+                1 => [
+                    'all',
+                ],
+                [
+                    'all',
+                ],
+            ],
+            'message' => [
+                2 => 'Votre nom de produit: %string% ne doit contenir que des caractères alphanumériques',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];
